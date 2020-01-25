@@ -139,7 +139,7 @@ def station_stats(df):
     print(cend)
 
     # display most frequent combination of start station and end station trip
-    #2.a Combine Start Station and End Station to create new columns
+    #2.a Combine Start Station and End Station to create a new column
     df['Path'] = df['Start Station']+ " To " + df['End Station']
     cpath = df['Path'].mode()[0]
     print()
